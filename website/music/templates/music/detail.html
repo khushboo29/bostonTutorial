@@ -10,8 +10,15 @@
   </head>
   <body>
 
-  {{ album }}
+  <h2>Album Title- <span> {{ album.album_title}} </span> </h2>
+  <h2>Album Artist- <span> {{ album.artist}} </span> </h2>
+  <img src="{{ album.album_logo }}">
 
+  {% for song in album.song_set.all %}
+    <ul>
+        <li> Song Title- {{ song.song_title }} And Song File Type- {{ song.file_type }} </li>
+    </ul>
+  {% endfor %}
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
