@@ -1,0 +1,11 @@
+body{
+    background: white url("images/Penguins.jpg");
+    padding-bottom: 20px;
+}
+.navbar {
+    margin-bottom: 20px;
+    border-radius: 0px;
+}
+.navbar-brand{
+    font-family: 'Satisfy', cursive;
+}
